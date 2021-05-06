@@ -64,8 +64,8 @@ def get_movements_8n(x: int, y: int) -> List:
             (x + 1, y - 1)]
 
 
-def obstacle(y, x, clearance=0):  # This function definition inspects whether a coordinate point x
-    y = 99 - y
+def obstacle(x, y, clearance=0):  # This function definition inspects whether a coordinate point x
+    # y = 99 - y
     # and y lie on the obstacle or not
     inside_circle1 = False
     inside_circle2 = False
