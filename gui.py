@@ -241,21 +241,25 @@ class Animation:
                         if counter == index:
                             for i in range(iterations - 1):
                                 main_path_r1.append(anothereach)
-            else:
+                            break
+            if len(robot2_stops) == 0:
                 main_path_r1 = r1_plot_list
             if len(robot2_stops) > 0:
+                index_list_r2 = list()
+                iteration_list_r2 =list()
                 for each in robot2_stops:
-                    index = each[0]
-                    iterations = each[1]
-                    counter = -1
-                    for anothereach in r2_plot_list:
-                        counter = counter + 1
-                        main_path_r2.append(anothereach)
-                        if counter == index:
-                            for i in range(iterations-1):
-                                main_path_r2.append(anothereach)
+                    index_list_r2.append(each[0])
+                    iteration_list_r2.append(each[1])
+                counter = -1
+                for anothereach in r2_plot_list:
+                    counter = counter + 1
+                    main_path_r2.append(anothereach)
+                    if counter in index_list_r2:
+                        for i in range(0, iteration_list_r2[index_list_r2.index(counter)]-1):
+                            main_path_r2.append(anothereach)
 
-            else:
+
+            if len(robot2_stops) == 0:
                 main_path_r2 = r2_plot_list
 
             print("######")
