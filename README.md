@@ -43,6 +43,8 @@ Then you have to run the following commands in the terminal at your catkin works
 `rosrun project5sim control.py`<br/>
 <br/>
 The Gazebo simulation will begin. The mechanum robot is taken from the following repository. https://github.com/RBinsonB/nexus_4wd_mecanum_simulator
+The D* implementation is based on the D* lite implementation by Kristoffer Rakstad Solberg available at:
+https://github.com/Sollimann/Dstar-lite-pathplanner
 
 This is a beautiful project that entails how dynamic path detection can be coupled with replanning using coordination graph of coordination space and avoid collision in a humane way.
 You can find the report for this project <a href="https://drive.google.com/drive/folders/1mFabaJvSgGlYCFpDSGG98V-esGqHJEwu?usp=sharing">here</a>. The report includes suggested extension for the study and a small part of the implementation of the suggested methodology. 
