@@ -38,7 +38,7 @@ This was the objective of the project. We successfully implemented collision det
 
 
 This is a beautiful project that entails how dynamic path detection can be coupled with replanning using coordination graph of coordination space and avoid collision in a humane way.
-You can find the report for this project <a>here</a>. The report includes suggested extension for the study and a small part of the implementation of the suggested methodology. 
+You can find the report for this project <a href="https://drive.google.com/drive/folders/1mFabaJvSgGlYCFpDSGG98V-esGqHJEwu?usp=sharing">here</a>. The report includes suggested extension for the study and a small part of the implementation of the suggested methodology. 
 
 
 In case you encounter any difficulty please feel free to contact the creators - <br/>
