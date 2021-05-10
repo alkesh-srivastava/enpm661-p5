@@ -9,7 +9,6 @@ robot system and produces optimal solutions even if robots are on a collision co
 
 
 We will be using the following maze as our main playground for the robot the multirobot system. This map has been taken from Project 3 Phase 3 and is an appropriate map to test the feasibility of the implementation done in the chosen research paper.
-![Input](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/image6.png)
 ### Objective
 The goal of the project is to simulate results from the paper mentioned in the title of this Readme file. This project will fall under the **OPTION 1** in the proposed options to choose for this project.
 1. The end result of the project produced a simulation where a system of robots are assigned to reach their respective goal positions, from a user defined start position
@@ -19,10 +18,10 @@ on the above pre-defined map.
 In the root folder you will notice that there are multiple files and directories. To run this file you will have to run `main.py ` file.
 You will be required to enter the starting ang goal position of each of the robot. Please ensure that you properly enter the start and goal position to run the file correctly. 
 Do not worry about entering co-ordinates that will coincide with obstacle, the program is smart enough to detect obstacle before you run the file.
-![Input](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/image3.png)
+![Input](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/P5%20Py1.PNG)
 
 As soon as you hit enter, the python environment simulation will begin as shown in the figure : 
-![Envrionment](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/image4.png)
+![Envrionment]https://github.com/alkesh-umd/enpm661-p5/blob/main/images/Fig3.PNG)
 
 You will notice that the program is ending before the robots reach their goal position. Actually, that is the objective of this project. Take the following co-ordinates as an example :
 1. `Robot 1 - (0,0) to (70,70)`
@@ -31,16 +30,18 @@ You will notice that the program is ending before the robots reach their goal po
 With these input, you will notice that as soon as the robots are about to collide the python environment will stop simulating. It will generate a co-ordination graph that might look something like this:
 
 As soon as you will close graph the program ends. Although it might not seem like a successful completeion, but on checking the terminal you will see that its filled with co-ordinates that have been modified as per the velocity profile generated using the co-ordination graph that you just saw. That's the whole point of this project. 
-![Output](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/image5.png)
+![Coordination Graph](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/Fig3.PNG)
+
 This was the objective of the project. We successfully implemented collision detection and obtained modified pathway that can be used to simulate in Robot Operating System and justify the result.
 
-![Output](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/image5.png)
 For ROS simulation you have to make certain changes. The first cahnge would be in the `nexus_4wd_mecanum_multi.launch` file. You have to make changes in the argument for `pos_x` and `pos_y`. 
 After the above changes are done, you have to manually input the robot path in the mentioned location in `control.py` file.
 Then you have to run the following commands in the terminal at your catkin workspace:
 <br/>
-`roslaunch nexus_4wd_mecanum_gazebo nexus_4wd_mecanum_multi.launch`<br/>
+`roslaunch nexus_4wd_mecanum_gazebo nexus_4wd_mecanum_multi.launch`<br/> as:
+![First Edit](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/P5%20ROS%201.PNG)
 `rosrun project5sim control.py`<br/>
+![Second Edit](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/P5%20ROS%202.PNG)
 <br/>
 The Gazebo simulation will begin. The mechanum robot is taken from the following repository. https://github.com/RBinsonB/nexus_4wd_mecanum_simulator
 The D* implementation is based on the D* lite implementation by Kristoffer Rakstad Solberg available at:
