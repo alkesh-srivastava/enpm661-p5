@@ -22,6 +22,8 @@ Do not worry about entering co-ordinates that will coincide with obstacle, the p
 
 As soon as you hit enter, the python environment simulation will begin as shown in the figure : 
 ![Envrionment](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/Fig3.PNG)
+<br/>
+Press Spacebar to move robots by one time-step. Continously press them till it collides or reaches the goal position.
 
 You will notice that the program is ending before the robots reach their goal position. Actually, that is the objective of this project. Take the following co-ordinates as an example :
 1. `Robot 1 - (0,0) to (70,70)`
@@ -43,6 +45,10 @@ Then you have to run the following commands in the terminal at your catkin works
 `rosrun project5sim control.py`<br/>
 ![Second Edit](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/P5%20ROS%202.PNG)
 <br/>
+Make sure that you enter the path which are followed by '######' as shown in Fig:
+![Figure](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/P5%20Py2.PNG)
+
+
 The Gazebo simulation will begin. The mechanum robot is taken from the following repository. https://github.com/RBinsonB/nexus_4wd_mecanum_simulator
 The D* implementation is based on the D* lite implementation by Kristoffer Rakstad Solberg available at:
 https://github.com/Sollimann/Dstar-lite-pathplanner
