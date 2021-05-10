@@ -21,7 +21,7 @@ Do not worry about entering co-ordinates that will coincide with obstacle, the p
 ![Input](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/P5%20Py1.PNG)
 
 As soon as you hit enter, the python environment simulation will begin as shown in the figure : 
-![Envrionment]https://github.com/alkesh-umd/enpm661-p5/blob/main/images/Fig3.PNG)
+![Envrionment](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/Fig3.PNG)
 
 You will notice that the program is ending before the robots reach their goal position. Actually, that is the objective of this project. Take the following co-ordinates as an example :
 1. `Robot 1 - (0,0) to (70,70)`
