@@ -30,7 +30,7 @@ You will notice that the program is ending before the robots reach their goal po
 With these input, you will notice that as soon as the robots are about to collide the python environment will stop simulating. It will generate a co-ordination graph that might look something like this:
 
 As soon as you will close graph the program ends. Although it might not seem like a successful completeion, but on checking the terminal you will see that its filled with co-ordinates that have been modified as per the velocity profile generated using the co-ordination graph that you just saw. That's the whole point of this project. 
-![Coordination Graph](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/Fig3.PNG)
+![Coordination Graph](https://github.com/alkesh-umd/enpm661-p5/blob/main/images/Fig5.PNG)
 
 This was the objective of the project. We successfully implemented collision detection and obtained modified pathway that can be used to simulate in Robot Operating System and justify the result.
 
