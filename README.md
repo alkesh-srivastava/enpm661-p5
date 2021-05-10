@@ -35,7 +35,14 @@ As soon as you will close graph the program ends. Although it might not seem lik
 This was the objective of the project. We successfully implemented collision detection and obtained modified pathway that can be used to simulate in Robot Operating System and justify the result.
 
 ![Output](https://github.com/alkesh-umd/enpm661-p3-phase3/blob/main/images/image5.png)
-
+For ROS simulation you have to make certain changes. The first cahnge would be in the `nexus_4wd_mecanum_multi.launch` file. You have to make changes in the argument for `pos_x` and `pos_y`. 
+After the above changes are done, you have to manually input the robot path in the mentioned location in `control.py` file.
+Then you have to run the following commands in the terminal at your catkin workspace:
+<br/>
+`roslaunch nexus_4wd_mecanum_gazebo nexus_4wd_mecanum_multi.launch`<br/>
+`rosrun project5sim control.py`<br/>
+<br/>
+The Gazebo simulation will begin.
 
 This is a beautiful project that entails how dynamic path detection can be coupled with replanning using coordination graph of coordination space and avoid collision in a humane way.
 You can find the report for this project <a href="https://drive.google.com/drive/folders/1mFabaJvSgGlYCFpDSGG98V-esGqHJEwu?usp=sharing">here</a>. The report includes suggested extension for the study and a small part of the implementation of the suggested methodology. 
